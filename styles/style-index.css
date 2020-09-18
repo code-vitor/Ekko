@@ -16,13 +16,6 @@ html {
 
 /*NAVBAR*/
 .navbar{ 
-    /* display: flex;
-    justify-content: space-between;
-
-    height: 61px;
-    width: 100%;
-    background-color: rgb(66 154 158); */
-
     display: flex;
     justify-content: space-between;
     height: 61px;
@@ -31,6 +24,8 @@ html {
 
     background-color: rgb(241 241 241);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+
+    z-index: 1;
 }
 .image-icons {
     margin: 10px 17px -4px;
@@ -60,27 +55,88 @@ html {
 
 /*CONTENT*/
     
-#content {
+
+
+
+
+
+#box-skins {
     display: flex;
+    width: 100%;
+    height: 100vh;    
+    
+    background-color: #3e32c0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-skins-container img {
+    width: 100%;
+}
+.box-skins-container{
+    width: 824px;
+    height: 524px;
+
+}
+.box-skins-show {
+    width: 233px;
+    height: 524px;
+    position: absolute;
+
+    background-color: #0a0a0ab3;
+}
+.box-skins-show h2 {
+    font-size: 19px;
+    font-style: italic;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: serif;
+    border-bottom: 0.2px solid rgb(255 255 255);
+    padding: 15px;
+    margin: 16px;
+    color: #fff;
+}
+
+.ekko-skins {
+    display: flex;
+    flex-direction: column;   
+}
+.ekko-skins li {
+    display: flex;
+    width: 100%;
+}
+.ekko-skins li button {
+    background: none;
+
+    display: flex;
+    align-items: center;
 
     width: 100%;
+    margin: 15px 15px 0px 15px;
+    border: 0.5px #d6c8c8 solid;
+}
+.ekko-skins li button img {
+    width: 105px;
+}
+.ekko-skins li button label {
+    margin-left: 20px;
+    color: #fff;
 
-    justify-content: space-between;
+    text-transform: uppercase;
 }
 
-#content article {
-    display: flex;
-    border-radius: 2px;
-}
-#content article img {
-    height: 199px;
-    margin: 10px;
-    border-radius: 2px;
-}
-#content h1 {
-    display: flex;
-    margin: 200px;
-}
+
+
+
+
+
+
+
+
 
 .content-2 img {
     display: flex;
@@ -209,10 +265,10 @@ h1 {
 }
 section { 
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-
+    max-width: 879px;
     margin: 20px;
+    flex-wrap: wrap;
+    max-height: 652px;
 }
 section article {
     height: auto;
@@ -244,6 +300,9 @@ aside {
 }
 aside img {
     width: 361px;
+}
+aside img:first-child {
+    margin-top: 75px;
 }
 
 /*FOOTER*/
