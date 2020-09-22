@@ -65,31 +65,43 @@ html {
     width: 100%;
     height: 100vh;    
     
-    background-color: #3e32c0;
-
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
 .box-skins-container img {
-    width: 100%;
+    height: 100%;
 }
 .box-skins-container{
-    width: 824px;
-    height: 524px;
-
+    height: 560px;
+    margin-top: 81px;
 }
 .box-skins-show {
-    width: 233px;
-    height: 524px;
+    width: 292px;
+    height: 560px;
     position: absolute;
 
     background-color: #0a0a0ab3;
+
+    overflow-y: scroll;
+
+    backdrop-filter: blur(5px);
 }
+
+.box-skins-show::-webkit-scrollbar {
+    background-color: black;
+    width: 5px;
+}
+.box-skins-show::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    width: 158px;
+    border: 2px solid black;
+}
+
+
 .box-skins-show h2 {
-    font-size: 19px;
+    font-size: 22px;
     font-style: italic;
     letter-spacing: 0.10em;
     text-transform: uppercase;
@@ -309,18 +321,22 @@ aside img:first-child {
 
 footer { 
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 170px;
+    height: 250px;
 
     background-color: cornflowerblue;
-    justify-content: center;
 }   
-footer div {
-    display: flex;
-    height: 100%;
-    width: 300px;
-
+.footer-icons {
+    width: 100%;
+    height: 437px;
 }
-footer div h4 {
-    margin: auto;
+
+.footer-copyright {
+    background-color: blue;
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    align-items: flex-end;
 }
