@@ -1,41 +1,21 @@
-const { func } = require("prop-types")
-
-function changeImage01(){
+// 
+function changeSrc(src){
     let img = document.querySelector("#bg-image")
 
-    img.src = './images/Ekko.jpg'
+    img.src = src
 }
 
-function changeImage02(){
-    let img = document.querySelector("#bg-image")
 
-    img.src = './images/Ekko-True-Damage.jpg'
-}
 
-function changeImage03(){
-    let img = document.querySelector("#bg-image")
+// Se o nome da class foor "navbar" vc adiciona a class "responsive"
+// Senao ele volta a class para a "navbar"
+function navResponsive(){
+    let nav = document.querySelector("#topNav");
 
-    img.src = './images/Ekko-Pulsefire.jpg'
-}
+    if (nav.className === "navbar") {
 
-function changeImage04(){
-    let img = document.querySelector("#bg-image")
-
-    img.src = './images/Ekko-Halloween.jpg'
-}
-
-function changeImage05(){
-    let img = document.querySelector("#bg-image")
-
-    img.src = './images/Ekko-Storm.jpg'
-}
-function changeImage06(){
-    let img = document.querySelector("#bg-image")
-
-    img.src = './images/Ekko-school.jpg'
-}
-function changeImage07(){
-    let img = document.querySelector("#bg-image")
-
-    img.src = './images/ekko-project.jpg'
+        nav.className += "responsive"; 
+    } else {
+        nav.className = "navbar";
+    }
 }

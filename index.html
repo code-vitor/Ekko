@@ -15,24 +15,38 @@
 </head>
 <body>
 <div class="container">
-    <nav class="navbar">
+    <nav class="navbar" id="topNav">
         <div class="image-icons">
-            <img src="./images/ekko-logo.png" style="margin-bottom:14px">
         </div>
         <div>
-            <a href="#box-history">HISTORY</a>
-            <a href="#box-reason">REASON</a>
-            <a href="#box-skins">SKINS</a>
-            <a href="#">HOW PLAY</a>
+            <a href="#box-history">
+                <span class="fas fa-code-branch"></span>
+                <p>HISTÓRIA</p>
+            </a>
+
+            <a href="#box-reason">
+                <span class="fab fa-connectdevelop"></span>
+                <p>MOTIVOS</p>
+            </a>
+
+            <a href="#box-skins">
+                <span class="fas fa-microchip"></span>
+                <p>SKINS</p>
+            </a>
+
+            <a href="#end">
+                <span class="fas fa-power-off"></span>
+                <p>FIM</p>
+            </a>
         </div>
     </nav>
 
-    <div class="full-screen">
+    <div id="full-screen">
         <video src="./video/playback.mp4" autoplay muted loop ></video>
 
         <div class="content-2">
             <img src="./images/ekko.png" alt="ekko-name">
-            <p>It's not how much time you have, it's how you use it</p>
+            <p>Não quanto tempo você tem, e sim como você usa</p>
             <a href="https://br.leagueoflegends.com/pt-br/champions/ekko/">Play Ekko</a>
         </div>
     </div>
@@ -40,37 +54,37 @@
     <div id="box-history">
         <div class="box-history-profile">
             <img src="./images/middle-image.png" alt="">
-            <h2>THE BOY WHO SHATERED TIME</h2>
-            <p>A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Zero Drive, he explores the branching possibilities of reality to craft the perfect moment. Though he revels in this freedom, when there's a threat to his friends he'll do anything to defend them. To outsiders, Ekko seems to achieve the impossible the first time, every time.</p>
+            <h2>O RAPAZ QUE ESTILHAÇOU O TEMPO</h2>
+            <p>Um prodígio das ruas violentas de Zaun, Ekko manipula o tempo para reverter qualquer situação a seu favor. Usando sua própria invenção, o Revo-Z, ele explora as possíveis bifurcações da realidade para criar o momento perfeito. Embora valorize muito sua liberdade, quando algo ameaça seus amigos, ele não mede esforços para defendê-los. Para meros observadores, Ekko parece conseguir o impossível sempre de primeira.</p>
         </div>
     </div>
 
     <div id="box-reason">
         <div>
             <span class="fas fa-cogs"></span>
-            <h2>INVENTIONS</h2>
-            <p>Create your on invantions and change the past. </p>
+            <h2>INVENÇÕES</h2>
+            <p>Crie sua própria máquina e reescreva o passado. </p>
         </div>
         <div>
             <i class="fas fa-hourglass-half"></i>
-            <h2>TIME IS RUNNING</h2>
-            <p>You need to be more fast, sand is ending. </p>
+            <h2>O TEMPO ESTÁ PASSANDO</h2>
+            <p>Você precisa ser mais rápido, a areia está acabando. </p>
         </div>
         <div>
             <i class="fas fa-user-clock"></i>
-            <h2>GO BACK</h2>
-            <p>The time is over, go back and do all again.</p>
+            <h2>VOLTE ATRÁS</h2>
+            <p>Seu tempo acabou, Volte e faça tudo novamente.</p>
         </div>
     </div>
 
     <div id="box-skins"> 
         <div class="box-skins-container" >
             <div class="box-skins-show">
-                <h2>Skins disponíveis</h2>
-                <div>
+                <h2>SKINS DISPONÍVEIS</h2>
+                <div class="box-all-skins">
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage01()">
+                            <button onclick="changeSrc('./images/ekko.jpg')">
                                 <img src="./images/ekko.jpg" alt="ekko-img-01">
                                 <label>Ekko</label>
                             </button>
@@ -78,7 +92,7 @@
                     </div>
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage02()">
+                            <button onclick="changeSrc('./images/ekko-true-damage.jpg')">
                                 <img src="./images/ekko-true-damage.jpg" alt="ekko-img-01">
                                 <label>True Damage</label>
                             </button>
@@ -86,7 +100,7 @@
                     </div>
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage03()">
+                            <button onclick="changeSrc('./images/Ekko-Pulsefire.jpg')">
                                 <img src="./images/Ekko-Pulsefire.jpg" alt="ekko-img-01">
                                 <label>Pulsefire</label>
                             </button>
@@ -94,7 +108,7 @@
                     </div>
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage04()">
+                            <button onclick="changeSrc('./images/Ekko-Halloween.jpg')">
                                 <img src="./images/Ekko-Halloween.jpg" alt="ekko-img-01">
                                 <label>Halloween</label>
                             </button>
@@ -102,7 +116,7 @@
                     </div>
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage05()">
+                            <button onclick="changeSrc('./images/ekko-storm.jpg')">
                                 <img src="./images/ekko-storm.jpg" alt="ekko-sandstorm">
                                 <label>Sandstorm</label>
                             </button>
@@ -110,7 +124,7 @@
                     </div>
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage06()">
+                            <button onclick="changeSrc('./images/ekko-school.jpg')">
                                 <img src="./images/ekko-school.jpg" alt="ekko-academy">
                                 <label>ACADEMY</label>
                             </button>
@@ -118,7 +132,7 @@
                     </div>
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage07()">
+                            <button onclick="changeSrc('./images/Ekko-Project.jpg')">
                                 <img src="./images/Ekko-Project.jpg" alt="Ekko-Project">
                                 <label>project</label>
                             </button>
@@ -126,7 +140,7 @@
                     </div>
                     <div class="ekko-skins">
                         <li>
-                            <button onclick="changeImage08()">
+                            <button onclick="changeSrc('./images/ekko-skt1.jpg')">
                                 <img src="./images/ekko-skt1.jpg" alt="Ekko-SKT1">
                                 <label>SKT T1</label>
                             </button>
@@ -139,17 +153,19 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="end">
+        <a href="#full-screen"><span class="fas fa-chevron-up"></span></a>
+        
         <div class="footer-icons">
-            fir9h 
-            ifrjfor
-            fjorjfor
+            <div>
+                <img src="./images/lol.png" alt="lol-logo">
+                <p>© 2006-2020 Riot Games. Todos os direitos reservados. Visite-os: <a href="https://www.riotgames.com/pt-br">Acessar Riot Games</a></p>
+            </div>
         </div>
 
         <div class="footer-copyright">
-            copyright
+           Por <a href="https://www.linkedin.com/in/vitor-silva-75a30a166/"> Vitor Silva</a>
         </div>
-
     </footer>
     
     <script src="./js/main.js"></script>
